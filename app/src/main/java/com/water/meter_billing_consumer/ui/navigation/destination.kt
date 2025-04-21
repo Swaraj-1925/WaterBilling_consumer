@@ -10,7 +10,7 @@ object ListScreenRoute
 data class BillScreenRoute(
     val id: Int,
     val phone: String,
-    val reader_id: Int,
+    val reader_id: String,
     val image_url: String,
     val reading_value: Int,
     val reading_date: String,

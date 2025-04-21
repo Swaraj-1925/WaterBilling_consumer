@@ -72,12 +72,13 @@ class AuthViewModel @Inject constructor(
             Log.w("AuthViewModel :validateForm", "Password cannot be empty")
         }
 
-        if (_confirmPassword.value.isNotBlank()) {
-            Log.w("AuthViewModel :validateForm", "Passwords do not match")
-            errors["password"] = "Password cannot be empty"
-        }else if (_password.value != _confirmPassword.value){
-            errors["confirmPassword"] = "Passwords do not match"
-        }
+//        if (_confirmPassword.value.isNotBlank()) {
+//            Log.w("AuthViewModel :validateForm", "Passwords do not match")
+//            errors["password"] = "Password cannot be empty"
+//        }else if (_password.value != _confirmPassword.value){
+//            Log.w("AuthViewModel :validateForm", "Passwords do not match")
+//            errors["confirmPassword"] = "Passwords do not match"
+//        }
 
         if (_address.value.isBlank()) {
             Log.w("AuthViewModel :validateForm", "Address cannot be empty")
